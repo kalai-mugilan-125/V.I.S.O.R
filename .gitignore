@@ -1,0 +1,106 @@
+# ============================================================================
+#  .gitignore for V.I.S.O.R. Application Stack
+#  Keeps source code & runtime scripts; excludes all build/install/binary bloat
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# 1. Virtual Environments & Installed Python Packages (Install Bloat)
+# ----------------------------------------------------------------------------
+venv/
+.venv/
+env/
+python_ai/venv/
+python_ai/env/
+python_ai/.venv/
+Lib/
+Scripts/
+site-packages/
+docs_ignored/
+
+# Python bytecode & runtime caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ----------------------------------------------------------------------------
+# 2. C++ & CMake Intermediate Build Artifacts (Build Bloat)
+# ----------------------------------------------------------------------------
+build/
+cpp_render/build/
+cpp_render/bin/
+cpp_render/out/
+_deps/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeScripts/
+
+# Compiled binaries, objects, and debug symbols
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.tlog
+*.ipdb
+*.iobj
+
+# Visual Studio & MSVC Generated Files
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.VC.db
+*.opendb
+
+# ----------------------------------------------------------------------------
+# 3. Packaging & Distribution Artifacts (Generated Bloat)
+# ----------------------------------------------------------------------------
+dist/
+dist/VISOR/
+dist_py/
+build_py/
+python_ai/dist_py/
+python_ai/build_py/
+*.spec
+
+# ----------------------------------------------------------------------------
+# 4. Local User Preferences, IDE & Editor Cache
+# ----------------------------------------------------------------------------
+imgui.ini
+*/imgui.ini
+cpp_render/imgui.ini
+
+.vscode/
+.clangd/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Metadata & Logs
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+scratch/
+
+# Packaging scripts, legacy runners & duplicate docs
+package_release.ps1
+run_visor.ps1
+python_ai/docs/

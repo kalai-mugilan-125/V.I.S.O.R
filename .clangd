@@ -1,0 +1,10 @@
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -I${workspaceFolder}/cpp_render/include
+    - -I${workspaceFolder}/cpp_render/build/_deps/glad-src/include
+    - -I${workspaceFolder}/cpp_render/build/_deps/glfw-src/include
+    - -I${workspaceFolder}/cpp_render/build/_deps/glm-src
+    - -I${workspaceFolder}/cpp_render/build/_deps/imgui-src
+    - -I${workspaceFolder}/cpp_render/build/_deps/imgui-src/backends
+    - -I${workspaceFolder}/cpp_render/build/_deps/tinyobjloader-src
